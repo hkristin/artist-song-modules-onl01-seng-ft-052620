@@ -1,6 +1,6 @@
 module Paramable
   module InstanceMethods
-    def find_by_name(name)
+    def to_param
       name.downcase.gsub(' ', '-')
     end
   end
