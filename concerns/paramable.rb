@@ -1,7 +1,7 @@
 module Paramable
   module InstanceMethods
     def find_by_name(name)
-      all.detect{|a| a.name == name}
+      name.downcase.gsub(' ', '-')
     end
   end
 end
